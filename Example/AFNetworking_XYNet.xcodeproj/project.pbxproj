@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26FB176A355092D38864E30F /* AFNetworking_XYNet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AFNetworking_XYNet.podspec; path = ../AFNetworking_XYNet.podspec; sourceTree = "<group>"; };
+		26FB176A355092D38864E30F /* AFNetworking_XYNet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AFNetworking_XYNet.podspec; path = ../AFNetworking_XYNet.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -27,8 +27,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		7827FB58CAD1DD8E0F7C06CE /* Pods_AFNetworking_XYNet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNetworking_XYNet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		832BFF19A2A736DA3EE4BBA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		999AD1172239ECCF3A0395E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		832BFF19A2A736DA3EE4BBA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		999AD1172239ECCF3A0395E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A81C42561D167D07174B4866 /* Pods-AFNetworking_XYNet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworking_XYNet_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFNetworking_XYNet_Tests/Pods-AFNetworking_XYNet_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AB9897988789C86C7B08C006 /* Pods-AFNetworking_XYNet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworking_XYNet_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFNetworking_XYNet_Tests/Pods-AFNetworking_XYNet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,10 +225,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AFNetworking_XYNet_Tests/Pods-AFNetworking_XYNet_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking_XYNet/AFNetworking_XYNet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking_XYNet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

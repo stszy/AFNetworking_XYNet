@@ -1,0 +1,6 @@
+framework module AFNetworking_XYNet {
+  umbrella header "AFNetworking_XYNet-umbrella.h"
+
+  export *
+  module * { export * }
+}
