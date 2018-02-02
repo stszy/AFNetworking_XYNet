@@ -1,0 +1,6 @@
+use_frameworks!
+target 'AFNetworking_XYNet_Tests' do
+  pod 'AFNetworking_XYNet', :path => '../'
+  
+  
+end
